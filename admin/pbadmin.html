@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Political Admin Manager</title>
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" /><!-- Bootstrap -->
+<link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.css" type="text/css" /><!-- Font Awesome -->
+<link rel="stylesheet" href="css/style.css" type="text/css" /><!-- Style -->	
+<link rel="stylesheet" href="css/responsive.css" type="text/css" /><!-- Responsive -->	
+
+ 
+<!-- Script -->
+<script src="js/jquery-1.10.2.js"></script><!-- Jquery -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script><!-- Bootstrap -->
+<script type="text/javascript" src="js/script.js"></script><!-- Script -->
+<script type="text/javascript" src="js/pbadmin.js"></script><!-- Script -->
+
+  <!-- 2 load the theme CSS file -->
+  <link rel="stylesheet" href="dist/themes/default/style.min.css" />
+<link rel="stylesheet" href="css/jquery-ui.min.css" />
+  <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+		<div class="responsive-menu">
+			<div class="responsive-menu-dropdown blue">
+				<a title="" class="blue">MENU <i class="fa fa-align-justify"></i></a>
+			</div>
+			
+	</div>
+	<header>
+		
+	</header><!-- Header -->
+
+	<div id="menu" class="menu">
+		
+	</div><!-- Right Menu -->
+
+<div class="wrapper">
+	<div class="container">
+		<h3>Political Admin Manager</h3>	Search Person<input type="text" id="search-person"/>
+		
+		<a class="btn pink" href="#add-admin" onclick='return fetch_form_data(event);' data-toggle="modal"><i class="fa fa-plus"></i> New Admin Type</a>	
+		<div id="location-filter"></div>
+		<div id="pbtype-filter"></div>
+		
+		<div class="row">
+			<div class="col-md-12 profile-margin">
+	
+			
+				<div id="add-new-admin" >
+					  <h4 class="modal-title">Add New Admin</h4>
+					
+					<div>
+					  <table>
+						<tr>
+							<td>Name</td>
+							<td><input type="text" id="full_name"/></td>
+							<td>Biodata</td>
+							<td><input type="text" id="biodata"/></td>
+							<td>Date of Birth</td>
+							<td><input type="text" id="dob"/></td>
+							<td>Gender</td>
+							<td><select id="gender">
+							 <option value="Male">Male</option>
+							 <option value="Female">Female</option>
+							</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Email</td>
+							<td><input type="text" id="email"/></td>
+							<td>Landline Number 1</td>
+							<td><input type="text" id="landlineNumber1"/></td>
+							<td>Landline Number 2</td>
+							<td><input type="text" id="landlineNumber2"/></td>
+							<td>Mobile Number 1</td>
+							<td><input type="text" id="mobileNumber1"/></td>
+						</tr>
+						<tr>
+							<td>Mobile Number 2</td>
+							<td><input type="text" id="mobileNumber2"/></td>
+							<td>Line1</td><td><input type="text" id="line1"/></td>
+							<td>Line2</td><td><input type="text" id="line2"/></td>
+						    <td>Line3</td><td><input type="text" id="line3"/></td>
+						</tr>
+						<tr>
+						<td>Postal Code</td><td><input type="text" id="postalCode"/></td>
+						<td>Choose Party</td><td><select id="party_data"></select></td>
+						<td>Choose Admin Type</td><td><select id="admin_type_data"></select></td>
+						</tr>
+					    <tr>
+						<td>Choose Location</td>
+						<td></td>
+						<td></td>
+						
+						
+						</tr>
+						</table>
+					  
+					</div>
+					<div class="modal-footer">
+					 
+					  <button class="btn btn-primary blue" type="button" onclick="add_update_admin();" >Save changes</button>
+					</div> 				  
+					</div>
+					
+				</div><!-- /.modal-content -->
+			</div>
+					
+		</div>
+			</div>
+			
+				
+			</div>
+		</div>
+		
+		
+		</div><!-- Container -->
+	</div><!-- Wrapper -->
+
+
+
+</body>
+</html>
